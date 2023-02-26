@@ -12,11 +12,20 @@
         $nome = "Joyker";
         $sobrenome = "Gomes";
         const PAIS = "Brasil";
+        //exemplo HEREDOC abaixo
         echo <<<FRASE
         Muito prazer,
          $nome $sobrenome!
                       Você mora no PAIS
         FRASE;
+
+        //exemplo NOWDOC abaixo
+        echo <<<'FRASE'
+        Muito prazer,
+         $nome $sobrenome!
+                      Você mora no PAIS
+        FRASE;
+
         var_dump($nome)
 
         //Regras para nomes identificadores:
